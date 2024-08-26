@@ -117,6 +117,8 @@
 
 .product-quantity .link-primary {
   margin-left: 3px;
+  cursor: pointer;
+  color: #017cb6;
 }
 
 @media (max-width: 1000px) {
