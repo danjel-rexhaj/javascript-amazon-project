@@ -49,7 +49,8 @@ cart.forEach((cartItem) => {
 
 
     cartSummaryHTML += `
-    <div class="cart-item-container js-cart-item-container-${matchingProduct.id}">
+    <div class="cart-item-container 
+    js-cart-item-container-${matchingProduct.id}">
             <div class="delivery-date">
               Delivery date: ${dateString}
             </div>
@@ -120,7 +121,7 @@ function deliveryOptionsHTML( matchingProduct, cartItem){
 
     html +=
 
-   `<div class="delivery-option">
+   `<div class="delivery-option js-delivery-option">
       <input type="radio"
       ${isChecked ? 'checked' : ''}
         class="delivery-option-input"
@@ -148,7 +149,6 @@ document.querySelectorAll('.js-delete-link').forEach((link) => {
         remuveFromCart(productId);
 
         const container = document.querySelector(`.js-cart-item-container-${productId}`
-
         );
         container.remove();
 
